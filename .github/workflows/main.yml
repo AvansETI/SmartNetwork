@@ -1,0 +1,13 @@
+name: deploy
+on: [push]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: 'pypy3.9' 
+      - run: cd smartnetwork
+      - run: pip3 install -r ./requirements
+      - run: python3 ./main.py
