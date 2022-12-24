@@ -11,4 +11,4 @@ jobs:
       - run: cd smartnetwork
       - run: ls -l
       - run: pip3 install -r ./smartnetwork/requirements.txt
-      - run: cd smartnetwork; python3 ./main.py
+#      - run: cd smartnetwork; python3 ./main.py
